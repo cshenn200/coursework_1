@@ -7,6 +7,12 @@ class Dec2Hex
 
     public static void main(String args[])
     {
+        if(args.length == 0 || args[0].isEmpty())
+        {
+                System.err.println("Input integer to be converted");
+                return;
+        }
+
         if (args.length > 0) 
         {
             try 
